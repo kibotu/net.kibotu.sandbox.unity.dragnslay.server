@@ -27,6 +27,7 @@
         "seq" : "latest",
         "node-highcharts" : "latest",
         "hat": "latest",
-        "jsftp" : "latest"
+        "jsftp" : "latest",
+        "bower": "latest"
     }
 }
