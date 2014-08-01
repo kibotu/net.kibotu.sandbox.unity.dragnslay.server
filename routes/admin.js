@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+/* GET admin console */
 router.get('/', function(req, res) {
-  res.send('');
+    res.render('admin', { title: 'Admin Console' });
 });
 
 module.exports = router;

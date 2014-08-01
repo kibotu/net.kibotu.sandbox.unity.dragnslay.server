@@ -1,0 +1,24 @@
+{
+    "name": "main.js",
+    "version": "0.01",
+    "homepage": "https://github.com/kibotu/net.kibotu.sandbox.unity.dragnslay.server",
+    "author": [
+        "jan.rabe@wooga.net"
+    ],
+    "description": "\"Server for Dragn Slay\"",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "bootstrap": "latest",
+        "threejs": "latest",
+        "jquery": "latest",
+        "underscore": "latest",
+        "normalize-css": "latest"
+    }
+}
