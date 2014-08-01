@@ -2,9 +2,13 @@
     "name": "DragnSlayServer",
     "version": "0.0.1",
     "private": true,
+    "engines": {
+        "node": "0.10.x",
+        "npm": ">= 1.4"
+    },
     "scripts": {
         "start": "node ./bin/www",
-        "postinstall": "bower install --config.interactive=false",
+        "postinstall": "export HOME=/var/lib/openshift/53da7d615973ca6f44000189/app-root/runtime/repo; ./node_modules/bower/bin/bower install",
         "predeploy": "echo Starting Server.",
         "postdeploy": "echo Server stopped."
     },
