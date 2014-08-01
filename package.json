@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "start": "node ./bin/www",
-        "build-js": "HOME=$HOME/app-root/runtime bower install",
+        "postinstall": "bower install --config.interactive=false",
         "predeploy": "echo Starting Server.",
         "postdeploy": "echo Server stopped."
     },
