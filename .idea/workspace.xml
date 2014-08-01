@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43c3aa0d-13f2-4200-ad0c-b65dd5ecfc1c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/admin.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/admin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/chatform.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/client-events.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/global-header-includes.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/global-js-includes.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/listrooms.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/preview.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/queue.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/server-events.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layout.jade" afterPath="$PROJECT_DIR$/views/layout.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/users.js" afterPath="$PROJECT_DIR$/routes/users.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/global-header-includes.jade" afterPath="$PROJECT_DIR$/views/global-header-includes.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
-      <change type="MOVED" beforePath="D:\programming\sandbox\openshift\net.kibotu.sandbox.unity.dragnslay.server\public\stylesheets\style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
     </list>
     <ignored path="server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +32,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
               <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-              <folding />
+              <folding>
+                <marker date="1400621345974" expanded="true" signature="21:2002" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,7 +54,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
               <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-              <folding />
+              <folding>
+                <marker date="1406892396586" expanded="true" signature="17:128" placeholder="..." />
+                <marker date="1406892396586" expanded="true" signature="37:97" placeholder="..." />
+                <marker date="1406892396586" expanded="true" signature="106:128" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,11 +93,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7325175" vertical-offset="74" max-vertical-offset="1275">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
               <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global-js-includes.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/global-js-includes.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+              <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global-header-includes.jade" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/global-header-includes.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.16906077" vertical-offset="0" max-vertical-offset="905">
+              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -121,34 +128,8 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bower.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="493">
-              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server-events.jade" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/server-events.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1385820513959" expanded="true" signature="21:137" placeholder="..." />
-                <marker date="1385820513959" expanded="true" signature="159:262" placeholder="..." />
-                <marker date="1385820513959" expanded="true" signature="284:385" placeholder="..." />
-                <marker date="1385820513959" expanded="true" signature="407:502" placeholder="..." />
-                <marker date="1385820513959" expanded="true" signature="524:627" placeholder="..." />
-                <marker date="1385820513959" expanded="true" signature="649:753" placeholder="..." />
-                <marker date="1385820513959" expanded="true" signature="775:882" placeholder="..." />
+                <marker date="1406875681378" expanded="true" signature="21:66" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -187,6 +168,7 @@
         <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/routes/admin.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/global-header-includes.jade" />
       </list>
     </option>
   </component>
@@ -322,6 +304,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../unity/android/DragnSlay" />
     <property name="FullScreen" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Jade" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -581,12 +567,12 @@
       <workItem from="1406840248516" duration="2560000" />
       <workItem from="1406875967705" duration="4280000" />
       <workItem from="1406892307517" duration="2559000" />
-      <workItem from="1406896671208" duration="1908000" />
+      <workItem from="1406896671208" duration="2604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11307000" />
+    <option name="totallyTimeSpent" value="12003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
@@ -611,7 +597,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18336888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32834226" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32834226" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -643,7 +629,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1241">
           <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-          <folding />
+          <folding>
+            <marker date="1400621345974" expanded="true" signature="21:2002" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -684,13 +672,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1385820513959" expanded="true" signature="21:137" placeholder="..." />
-            <marker date="1385820513959" expanded="true" signature="159:262" placeholder="..." />
-            <marker date="1385820513959" expanded="true" signature="284:385" placeholder="..." />
-            <marker date="1385820513959" expanded="true" signature="407:502" placeholder="..." />
-            <marker date="1385820513959" expanded="true" signature="524:627" placeholder="..." />
-            <marker date="1385820513959" expanded="true" signature="649:753" placeholder="..." />
-            <marker date="1385820513959" expanded="true" signature="775:882" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -854,14 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/global-header-includes.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16887417" vertical-offset="0" max-vertical-offset="906">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/error.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="906">
@@ -874,13 +854,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/global-js-includes.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
-          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -945,13 +918,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="906">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1385820513959" expanded="true" signature="21:137" placeholder="..." />
-            <marker date="1385820513959" expanded="true" signature="159:262" placeholder="..." />
-            <marker date="1385820513959" expanded="true" signature="284:385" placeholder="..." />
-            <marker date="1385820513959" expanded="true" signature="407:502" placeholder="..." />
-            <marker date="1385820513959" expanded="true" signature="524:627" placeholder="..." />
-            <marker date="1385820513959" expanded="true" signature="649:753" placeholder="..." />
-            <marker date="1385820513959" expanded="true" signature="775:882" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1385820513959" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -989,7 +962,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="906">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1406875681378" expanded="true" signature="21:66" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -997,7 +972,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
           <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
+          <folding>
+            <marker date="1406892396586" expanded="true" signature="17:128" placeholder="..." />
+            <marker date="1406892396586" expanded="true" signature="37:97" placeholder="..." />
+            <marker date="1406892396586" expanded="true" signature="106:128" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1005,7 +984,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="335" max-vertical-offset="1241">
           <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-          <folding />
+          <folding>
+            <marker date="1400621345974" expanded="true" signature="21:2002" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,8 +1008,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7325175" vertical-offset="74" max-vertical-offset="1275">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/global-js-includes.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/global-header-includes.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16906077" vertical-offset="0" max-vertical-offset="905">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
           <folding />
         </state>
       </provider>
