@@ -1,10 +1,51 @@
 #!/usr/bin/env node
 var debug = require('debug')('server');
 var app = require('../app');
+var http = require('http').Server(app);
 
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
-app.set('port', process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080);
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+app.set('tcp_port', process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080);
+app.set('udp_port', 1338);
 
-var server = app.listen(app.get('port'), server_ip_address, function() {
-  debug('Express server listening on port ' + server_ip_address + ':' + server.address().port);
+// var io = require('socket.io')(http);
+
+var io = require('socket.io').listen(http.listen(app.get('tcp_port'),"0.0.0.0", function() {
+    debug("Info: TCP Server listening on "+ server_ip_address + ":" + app.get('tcp_port') );
+}));
+
+io.set('transports',
+       ['websocket',
+        'flashsocket',
+        'htmlfile',
+        'xhr-polling',
+        'jsonp-polling',
+        'polling']);
+io.set('authorization', function (data, accept) {  accept(null, true); });
+
+io.sockets.on('connect', function (socket){
+    debug("New connect from " + socket.request.connection.remoteAddress + ":" + socket.request.connection.remotePort);
+
 });
+io.sockets.on('connection', function (socket) {
+
+    // new client has connected
+    debug("New connection from " + socket.request.connection.remoteAddress + ":" + socket.request.connection.remotePort);
+});
+
+// # serving the flash policy file
+net = require("net");
+net.createServer(function(socket) {
+
+    //just added
+    socket.on("error", function() {
+        console.log("Caught flash policy server socket error: ");
+        console.log(err.stack);
+    });
+
+    socket.write('<?xml version="1.0"?>\n');
+    socket.write('<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">\n');
+    socket.write("<cross-domain-policy>\n");
+    socket.write('<allow-access-from domain="*" to-ports="*"/>\n');
+    socket.write('</cross-domain-policy>\n');
+    socket.end();
+}).listen(843);

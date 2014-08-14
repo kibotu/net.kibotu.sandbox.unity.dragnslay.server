@@ -32,6 +32,6 @@
         "node-highcharts" : "latest",
         "hat": "latest",
         "jsftp" : "latest",
-        "bower": "latest"
+        "bower": "latest",
     }
 }
