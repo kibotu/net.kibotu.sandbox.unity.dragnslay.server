@@ -8,7 +8,7 @@
     },
     "scripts": {
         "start": "node ./bin/www",
-        "postinstall": "export HOME=/var/lib/openshift/53da7d615973ca6f44000189/app-root/runtime/repo; ./node_modules/bower/bin/bower install",
+		"build-js": "HOME=$HOME/app-root/runtime bower install && r.js -o build-config.js",
         "predeploy": "echo Starting Server.",
         "postdeploy": "echo Server stopped."
     },
