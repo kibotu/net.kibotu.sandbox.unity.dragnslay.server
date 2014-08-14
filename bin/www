@@ -7,7 +7,6 @@ var io = require('socket.io')(http);
 
 var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 app.set('tcp_port', process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080);
-app.set('socket.io_port', 8000);
 app.set('udp_port', 1338);
 
 app.get('/', function(req, res){
@@ -24,6 +23,6 @@ io.on('connection', function(socket){
     debug("New connection from " + socket.request.connection.remoteAddress + ":" + socket.request.connection.remotePort);
 });
 
-var server = http.listen(app.get('socket.io_port'), server_ip_address, function() {
+var server = http.listen(function() {
     debug('Express server listening on port ' + server_ip_address + ':' + server.address().port);
 });

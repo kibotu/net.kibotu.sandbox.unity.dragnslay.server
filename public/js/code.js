@@ -139,8 +139,8 @@ $( document ).ready(function() {
     var connect = function(serverJson) {
 
 //        socket = io('http://' + serverJson[serverJson['network_interface']] + ':' + serverJson['tcp_port']);
-//        socket = io('http://' + 'server-dragnslay.rhcloud.com' + ':' + '8000');
-        socket = io('http://' + 'localhost' + ':' + '8080');
+        socket = io('http://' + 'server-dragnslay.rhcloud.com' + ':' + '8000');
+//        socket = io('http://' + 'localhost' + ':' + '63528');
 
         /** CLIENT   https://github.com/LearnBoost/socket.io/wiki/Exposed-events **/
 
