@@ -8,7 +8,7 @@
     },
     "scripts": {
         "start": "node ./bin/www",
-        "postinstall": "export HOME=$HOME/app-root/runtime/repo; ./node_modules/bower/bin/bower install"
+        "postinstall": "export HOME=$HOME/app-root/runtime/repo; ./node_modules/bower/bin/bower --config.interactive=false install"
     },
     "main": "./bin/www",
     "author": "Jan Rabe <jan.rabe@wooga.net>",
