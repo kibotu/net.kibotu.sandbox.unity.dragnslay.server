@@ -22,6 +22,7 @@
         "debug": "latest",
         "jade": "latest",
         "socket.io": "latest",
+		"socket.io-client" : "latest",
         "seq" : "latest",
         "node-highcharts" : "latest",
         "hat": "latest",
