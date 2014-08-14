@@ -138,7 +138,8 @@ $( document ).ready(function() {
 
     var connect = function(serverJson) {
 
-        socket = io('http://' + serverJson[serverJson['network_interface']] + ':' + serverJson['tcp_port']);
+//        socket = io('http://' + serverJson[serverJson['network_interface']] + ':' + serverJson['tcp_port']);
+        socket = io('http://' + '127.0.0.1' + ':' + '8080');
 
         /** CLIENT   https://github.com/LearnBoost/socket.io/wiki/Exposed-events **/
 
