@@ -1,12 +1,11 @@
 #!/usr/bin/env node
 var debug = require('debug')('server');
 var app = require('../app');
-var http = require('http').Server(app);
-
+var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 
-var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
-app.set('tcp_port', process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080);
+app.set('server_ip_address', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
+app.set('tcp_port', process.env.OPENSHIFT_NODEJS_PORT || 8000);
 app.set('udp_port', 1338);
 
 app.get('/', function(req, res){
@@ -23,6 +22,18 @@ io.on('connection', function(socket){
     debug("New connection from " + socket.request.connection.remoteAddress + ":" + socket.request.connection.remotePort);
 });
 
-var server = http.listen(function() {
-    debug('Express server listening on port ' + server_ip_address + ':' + server.address().port);
+var server = http.listen(8000, function () {
+    debug('Server listening on ' + JSON.stringify(server.address()));
 });
+
+//var server = http.listen(app.get('tcp_port'), app.get('server_ip_address'), function() {
+//    debug('Server listening on ' + JSON.stringify(server.address()));
+//});
+
+//var server = app.listen(app.get('tcp_port'), server_ip_address, function() {
+//    debug('Express server listening on port ' + server_ip_address + ':' + server.address().port);
+//});
+
+//var server = http.listen(function() {
+//    debug('Express server listening on port ' + server_ip_address + ':' + server.address().port);
+//});
