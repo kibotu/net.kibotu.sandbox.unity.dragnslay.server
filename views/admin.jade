@@ -63,6 +63,15 @@ block content
                 .panel-body.center.control-element
                     include server-events
 
+    .row
+        .col-sm-12
+            .panel.panel-default
+                .panel-heading
+                    h3.panel-title Server Log
+                .panel-body.control-element
+                    .input-group.col-md-12
+                        #server-log.well.well-lg.server-log
+
     include global-js-includes
     script(src='/socket.io/socket.io.js')
     script(src='/js/code.js')

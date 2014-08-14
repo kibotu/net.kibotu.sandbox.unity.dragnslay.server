@@ -1,6 +1,8 @@
 $( document ).ready(function() {
 
     $("[rel='tooltip']").tooltip();
+    var messages = [];
+    var debuglog = [];
 
     var sl = 12; // substring length to shorten names
     var os_stats_update_interval = 30000;
@@ -140,7 +142,19 @@ $( document ).ready(function() {
 
 //        socket = io('http://' + serverJson[serverJson['network_interface']] + ':' + serverJson['tcp_port']);
         socket = io('http://' + 'server-dragnslay.rhcloud.com' + ':' + '8000');
-//        socket = io('http://' + 'localhost' + ':' + '8080');
+//        socket = io('http://' + '127.0.0.1' + ':' + '8080');
+
+        /** debug log **/
+
+        socket.on('debug', function (data) {
+            debuglog.push(data);
+            var html = '';
+            for(var i = 0; i < debuglog.length; ++i) {
+                html += JSON.stringify(debuglog[i].message) + '<br />';
+            }
+            $("#server-log").html(html);
+            $("#server-log").animate({ scrollTop: $("#server-log")[0].scrollHeight}, 200);
+        });
 
         /** CLIENT   https://github.com/LearnBoost/socket.io/wiki/Exposed-events **/
 
@@ -326,7 +340,6 @@ $( document ).ready(function() {
         requestOsStats();
     },os_stats_update_interval);
 
-    var messages = [];
 
     /** HELPER FUNCTIONS **/
 

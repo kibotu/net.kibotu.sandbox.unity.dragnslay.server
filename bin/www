@@ -2,32 +2,45 @@
 var debug = require('debug')('server');
 var app = require('../app');
 var http = require('http').createServer(app);
-var io = require('socket.io')(http);
+var io = require('socket.io')(http); // https://coderwall.com/p/pgk00a
 
-app.set('server_ip_address', process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1');
-app.set('tcp_port', process.env.OPENSHIFT_NODEJS_PORT || 8000);
-app.set('udp_port', 1338);
 
 var ipaddress = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
 var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 
-app.get('/', function(req, res){
-    res.sendfile('index.html');
-});
+var sockets = [];
+
+var log = function(msg) {
+    for(var i = 0; i < sockets.length; ++i)
+        sockets[i].emit('debug', { message: msg });
+
+    debug(msg);
+};
 
 io.on('connect', function (socket){
-    debug("New connect from " + socket.request.connection.remoteAddress + ":" + socket.request.connection.remotePort);
-
+    log("New connect from " + socket.request.connection.remoteAddress + ":" + socket.request.connection.remotePort);
+    sockets.push(socket);
     socket.emit('message', { message: 'Welcome!', uid: "World!" });
 });
 
 io.on('connection', function(socket){
-    debug("New connection from " + socket.request.connection.remoteAddress + ":" + socket.request.connection.remotePort);
+    log("New connection from " + socket.request.connection.remoteAddress + ":" + socket.request.connection.remotePort);
+
+    // enable latency spam
+    setInterval(function() {
+        socket.startTime = Date.now();
+        socket.emit('debug', { message: 'ping'});
+    }, 2000);
 });
 
 var server = http.listen( port, ipaddress, function() {
-    debug('Server listening on ' + JSON.stringify(server.address()));
+    log('Server listening on ' + JSON.stringify(server.address()));
 });
+
+// io settings
+io.set('transports', [
+    'websocket'
+]);
 
 //var server = http.listen(app.get('tcp_port'), app.get('server_ip_address'), function() {
 //    debug('Server listening on ' + JSON.stringify(server.address()));
