@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser());
 app.use(favicon(__dirname + '/public/img/favicon.png'));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(__dirname + '/bower_components'));
+app.use(express.static(__dirname + '/components'));
 app.locals.pretty = true;
 
 //var _ = require('underscore');
