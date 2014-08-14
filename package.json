@@ -13,10 +13,6 @@
         "postdeploy": "echo Server stopped."
     },
     "main": "./bin/www",
-//    "repository": {
-//        "type": "git",
-//        "url": "https://github.com/kibotu/net.kibotu.sandbox.unity.dragnslay.server"
-//    },
     "author": "Jan Rabe <jan.rabe@wooga.net>",
     "license": "MIT",
     "dependencies": {
